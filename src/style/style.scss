@@ -23,6 +23,39 @@ button {
   outline: none;
 }
 
+@mixin flexboxTwo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin block {
+  transition: .4s;
+  border-radius: 10px;
+  &:hover {
+    transform: scale(1.1);
+    background: blueviolet;
+  }
+}
+
+@mixin sectionId {
+  padding: 100px 0;
+}
+
+
+$sizeThree: 55px;
+$sizeTwo: 17px;
+$gorizontal: 90%;
+$textHeight: 30px;
+
+$blockBg: #02cEdf;
+$img: 80%;
+
+$p: 20px 0;
+$pw: 80%;
+
 @import './header/header.scss';
 @import './hero/hero.scss';
+@import './block/block.scss';
+@import './textImage/textImage.scss';
 @import './footer/footer.scss';

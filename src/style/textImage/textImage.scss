@@ -1,0 +1,19 @@
+#text {
+  @include sectionId();
+  .text {
+    @include flexbox();
+    flex-direction: column-reverse;
+    h1 {
+      font-size: $sizeThree;
+    }
+    p {
+      width: $pw;
+      font-size: $sizeTwo;
+      line-height: $textHeight;
+      padding: $p;
+    }
+    img {
+      width: $img;
+    }
+  }
+}

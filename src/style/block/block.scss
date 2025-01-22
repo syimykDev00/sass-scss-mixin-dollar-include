@@ -1,0 +1,27 @@
+#blockGroup {
+  @include sectionId();
+  .blockGroup {
+    h1 {
+      color: black;
+      text-align: center;
+      font-weight: 600;
+      font-size: $sizeThree;
+    }
+    p {
+      padding: 20px 0;
+      text-align: center;
+      font-size: $sizeTwo;
+      width: $gorizontal;
+      margin: 0 auto;
+    }
+    &--general {
+      @include flexboxTwo;
+      &__block {
+        @include block();
+        width: 200px;
+        height: 200px;
+        background: $blockBg;
+      }
+    }
+  }
+}

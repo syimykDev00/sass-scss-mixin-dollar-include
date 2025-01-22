@@ -1,0 +1,35 @@
+@mixin firstSection {
+  padding: 100px 0;
+}
+
+@mixin flexbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+$textHeight: 30px;
+
+$size: 17px;
+
+#hero {
+  @include firstSection();
+  .hero {
+    @include flexbox();
+    h1 {
+      color: black;
+      font-size: 55px;
+      font-weight: 600;
+    }
+    p {
+      width: 80%;
+      padding: 20px 0;
+      line-height: $textHeight;
+      font-size: $size;
+    }
+    img {
+      width: 80%;
+    }
+  }
+}
